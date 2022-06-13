@@ -8,4 +8,5 @@ app.use(express.urlencoded({
     extended:true
 }))
 app.use('/', route)
+app.use('/static', express.static('public'));
 app.listen(process.env.PORT || port)
