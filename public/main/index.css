@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&family=Teko:wght@300&display=swap");
+body {
+  font-family: 'Allerta Stencil', sans-serif;
+  padding: 1vh;
+  background: #BFBFBF;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
