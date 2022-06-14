@@ -1,3 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&family=Teko:wght@300&display=swap");
 body {
-  font-family: 'Allerta Stencil', sans-serif; }
+  font-family: 'Allerta Stencil', sans-serif;
+  padding: 1vh;
+  background: linear-gradient(63deg, #364559 45%, #3C5473 55%);
+  color: whitesmoke;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw; }
+  body .container {
+    height: 100vh;
+    width: 100vw; }
+    body .container header {
+      grid-area: header; }
+    body .container main {
+      grid-area: main; }
+    body .container footer {
+      grid-area: footer; }
