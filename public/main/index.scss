@@ -28,8 +28,4 @@ $landscape:landscape;
 
 body{
     font-family: 'Allerta Stencil', sans-serif;
-    padding:1vh;
-    background:$back;
-    @include size(100vh,100vw);
-    @include d_flex(flex,row,center,center);
 }
