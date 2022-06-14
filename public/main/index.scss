@@ -39,6 +39,7 @@ $landscape:landscape;
     border:solid red 1vh;
   } 
 body{
+    margin:0;
     font-family: 'Allerta Stencil', sans-serif;
     background:linear-gradient(63deg, $dark 45%, $success 55%);
     color:$light;
@@ -54,6 +55,15 @@ body{
         @include size(100vh,100vw);
         header{
             @include area(header);
+
+             /*código em teste*/
+            @extend %border;
+            /*código em teste*/
+            span{margin-top:2em; @extend %border; height:100%;}
+            /*código em teste*/
+            h1{@include size(100%,100%); @extend %border;}
+            
+            overflow:$hide;
         }
         main{
             @include area(main);
