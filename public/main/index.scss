@@ -45,6 +45,12 @@ body{
     overflow:$hide;
     @include size(100vh,100vw);
     .container{
+        @include d_grid(grid,
+                        100%, 
+                        30% 50% 20%,
+                        'header header'
+                        'main main'
+                        'footer footer');
         @include size(100vh,100vw);
         header{
             @include area(header);
