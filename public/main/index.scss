@@ -35,10 +35,11 @@ $landscape:landscape;
     grid-template-rows:$rows;
     grid-template-areas:$g_areas;
 }
-
+%border{
+    border:solid red 1vh;
+  } 
 body{
     font-family: 'Allerta Stencil', sans-serif;
-    padding:1vh;
     background:linear-gradient(63deg, $dark 45%, $success 55%);
     color:$light;
     overflow:$hide;
