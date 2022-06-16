@@ -39,4 +39,23 @@ $landscape:landscape;
   height:$hgt;
   width:$wdt;
 }
-
+body{
+    margin:0;
+    font-family: 'Allerta Stencil', sans-serif;
+    background:linear-gradient(63deg, $dark 45%, $success 55%);
+    color:$light;
+    overflow:$hide;
+    align-items:$center;
+    text-align:$center;
+    @include size(100vh,100vw);
+    .container{
+        @include size(100%,60%);
+        @include d_flex(flex,column,center,center);
+        h1,div{
+            margin-bottom:5vh;
+        }
+        button{
+            margin-bottom:10vh;
+        }
+    }
+}

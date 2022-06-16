@@ -42,12 +42,12 @@ $landscape:landscape;
 %radius{
     border-radius:6px;
 }
-body{
+bhide;ody{
     margin:0;
     font-family: 'Allerta Stencil', sans-serif;
     background:linear-gradient(63deg, $dark 45%, $success 55%);
     color:$light;
-    overflow:$hide;
+    overflow:$
     @include size(100vh,100vw);
     .container{
         @include d_grid(grid,
