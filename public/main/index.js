@@ -17,8 +17,8 @@ function loadData(){
     fetch(URL,config).then(response=>response.json())
             .then(response=>{
                 for(let i=0;i<response.length;i++){
-                        console.log(variable.id.innerHTML=response[i].id)
-                        console.log(variable.msg.innerHTML=response[i].msg)
+                        console.log(variable.id.textContent=response[i].id)
+                        console.log(variable.msg.textContent=response[i].msg)
                 }
             })
             .catch(e=>console.log(e))
