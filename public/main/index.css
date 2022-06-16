@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&family=Teko:wght@300&display=swap");
-body .container main, body .container main .msg-container {
+body .container main, body .container main .msg-container, body .container main .msg-container .table, body .container main .msg-container .table #id, body .container main .msg-container .table #msg {
   border: solid red 1vh; }
 
 body {
@@ -34,7 +34,11 @@ body {
       body .container main .msg-container {
         /*temporario*/
         height: 100%;
-        width: 100%; }
+        width: 100%;
+        justify-content: center; }
+        body .container main .msg-container .table {
+          height: 100%;
+          width: 100%; }
     body .container footer {
       font-size: x-small;
       display: flex;

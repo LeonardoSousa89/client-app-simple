@@ -73,7 +73,15 @@ body{
             .msg-container{
                 /*temporario*/
                 @extend %border;
-                @include size(100%,100%); 
+                @include size(100%,100%);
+                justify-content:$center;
+                .table{
+                    @include size(100%,100%); 
+                    @extend %border;
+                    #id,#msg{
+                        @extend %border;
+                    }
+                }
             }
         }
         footer{ 
