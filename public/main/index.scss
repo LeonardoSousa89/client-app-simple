@@ -6,6 +6,7 @@ $danger:#F25116;
 $primary:#364559;
 $success:#3C5473;
 $light:whitesmoke;
+$ocean:#2B3640;
 $center:center;
 $small:small;
 $xsmall:x-small;
@@ -48,28 +49,31 @@ body{
     .container{
         @include d_grid(grid,
                         100%, 
-                        30% 50% 20%,
+                        20% 77% 3%,
                         'header header'
                         'main main'
                         'footer footer');
         @include size(100vh,100vw);
         header{
+            background:linear-gradient(63deg, whitesmoke 45%, white 55%);
+            color:$dark;
+            padding:1vh;
             @include area(header);
-
-             /*código em teste*/
-            @extend %border;
-            /*código em teste*/
-            span{margin-top:2em; @extend %border; height:100%;}
-            /*código em teste*/
-            h1{@include size(100%,100%); @extend %border;}
-            
+            h1{
+                font-size:3em;
+                @include size(100%,100%); 
+            }
             overflow:$hide;
         }
         main{
             @include area(main);
+            padding:3vh;
         }
-        footer{
+        footer{ 
+            font-size:x-small;
+            @include d_flex(flex,column,end,start);
             @include area(footer);
+            background:$ocean;
         }
     }
 }
