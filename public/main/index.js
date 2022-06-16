@@ -2,7 +2,7 @@ const doc=document
 
 let variable={
     id:doc.getElementById('id'),
-    msg:doc.getElementById('msg')
+    msg:doc.getElementById('msg'),
 }
 
 doc.onload=addEventListener('load',(e)=>{
@@ -17,10 +17,18 @@ function loadData(){
     fetch(URL,config).then(response=>response.json())
             .then(response=>{
                 for(let i=0;i<response.length;i++){
-                        variable.id.append(response[i].id)
-                        variable.msg.append(response[i].msg)
+                    let id=response[i].id
+                    createElement('ul',id,variable.id)
+
+                    let msg=response[i].msg
+                    createElement('ul',msg,variable.msg)
                 }
             })
             .catch(e=>console.log(e))
 }
 
+function createElement(typeElement,serverElement,containerPrintElementOnDom){
+    let elementCreated=doc.createElement(`${typeElement}`)
+    elementCreated.append(serverElement)
+    containerPrintElementOnDom.append(elementCreated)
+}

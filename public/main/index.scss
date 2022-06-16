@@ -6,6 +6,7 @@ $danger:#F25116;
 $primary:#364559;
 $success:#3C5473;
 $light:whitesmoke;
+$white:white;
 $ocean:#2B3640;
 $center:center;
 $small:small;
@@ -39,6 +40,9 @@ $landscape:landscape;
 %border{
     border:solid red 1vh;
   } 
+%radius{
+    border-radius:6px;
+}
 body{
     margin:0;
     font-family: 'Allerta Stencil', sans-serif;
@@ -55,7 +59,7 @@ body{
                         'footer footer');
         @include size(100vh,100vw);
         header{
-            background:linear-gradient(63deg, whitesmoke 45%, white 55%);
+            background:linear-gradient(63deg, $light 45%, $white 55%);
             color:$dark;
             padding:1vh;
             @include area(header);
@@ -66,20 +70,23 @@ body{
             overflow:$hide;
         }
         main{
-             /*temporario*/
-            @extend %border;
             @include area(main);
             padding:3vh;
             .msg-container{
-                /*temporario*/
-                @extend %border;
                 @include size(100%,100%);
                 justify-content:$center;
+                align-items:$center;
                 .table{
-                    @include size(100%,100%); 
-                    @extend %border;
-                    #id,#msg{
-                        @extend %border;
+                    padding:1vh;
+                    box-shadow:0px 0px 3px $white;
+                    border:1px solid $light;
+                    @extend %radius;
+                    thead th{
+                        border:1px solid $light;
+                        @extend %radius;
+                    }
+                    #id ul{
+                        border:1px solid $success;
                     }
                 }
             }
