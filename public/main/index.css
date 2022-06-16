@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&family=Teko:wght@300&display=swap");
+body .container main, body .container main .msg-container {
+  border: solid red 1vh; }
+
 body {
   margin: 0;
   font-family: 'Allerta Stencil', sans-serif;
@@ -25,8 +28,13 @@ body {
         height: 100%;
         width: 100%; }
     body .container main {
+      /*temporario*/
       grid-area: main;
       padding: 3vh; }
+      body .container main .msg-container {
+        /*temporario*/
+        height: 100%;
+        width: 100%; }
     body .container footer {
       font-size: x-small;
       display: flex;

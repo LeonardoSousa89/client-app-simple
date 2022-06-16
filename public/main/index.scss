@@ -66,8 +66,15 @@ body{
             overflow:$hide;
         }
         main{
+             /*temporario*/
+            @extend %border;
             @include area(main);
             padding:3vh;
+            .msg-container{
+                /*temporario*/
+                @extend %border;
+                @include size(100%,100%); 
+            }
         }
         footer{ 
             font-size:x-small;
