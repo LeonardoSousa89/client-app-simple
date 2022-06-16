@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+$dark:#364559;
+$secondary:#8C4130;
+$danger:#F25116;
+$primary:#364559;
+$success:#3C5473;
+$light:whitesmoke;
+$white:white;
+$ocean:#2B3640;
+$center:center;
+$small:small;
+$xsmall:x-small;
+$none:none;
+$hide:hidden;
+$percent:100%;
+$no-repeat:no-repeat;
+$portrait:portrait;
+$landscape:landscape;
+
+@mixin display($scr){
+    display:$scr;
+}
+ @mixin area($areas){
+  grid-area:$areas;
+}
+ @mixin d_flex($f_display,$direction,$justify,$align){
+  display:$f_display;
+  flex-direction:$direction;
+  justify-content:$justify;
+  align-items:$align;
+}
+@mixin d_grid($g_display,$columns,$rows,$g_areas){
+  display:$g_display;
+  grid-template-columns:$columns;
+  grid-template-rows:$rows;
+  grid-template-areas:$g_areas;
+}
+@mixin size($hgt,$wdt){
+  height:$hgt;
+  width:$wdt;
+}
+
