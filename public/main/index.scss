@@ -53,11 +53,21 @@ body{
     .container{
         @include d_grid(grid,
                         100%, 
-                        20% 77% 3%,
+                        30% 67% 3%,
                         'header header'
                         'main main'
                         'footer footer');
         @include size(100vh,100vw);
+
+        @media screen and(max-device-width:780px) {
+            header{
+                text-align:$center;
+                h1{
+                        font-size:medium; 
+                    }
+            }    
+        }
+
         header{
             background:linear-gradient(63deg, $light 45%, $white 55%);
             color:$dark;
