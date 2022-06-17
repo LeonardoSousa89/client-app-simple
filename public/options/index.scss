@@ -49,5 +49,25 @@ body{
     color:$light;
     overflow:$hide;
     @include size(100vh,100vw);
+    a{
+        text-decoration:none;
+        color:$light;
+        &:hover{
+            color:$light;
+        }
+    }
+    .container{
+        /*código para teste visual*/
+        @extend %border;
+
+        @include size(100%,60%);
+        @include d_flex(flex,column,center,center);
+        #id{
+             /*código para teste visual*/
+            @extend %border;
+
+            width:50px;
+        }
+    }
 }
 
