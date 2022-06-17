@@ -24,7 +24,6 @@ body {
           font-size: medium; } }
     body .container header {
       background: linear-gradient(63deg, whitesmoke 45%, white 55%);
-      color: #364559;
       padding: 1vh;
       grid-area: header;
       overflow: hidden; }
@@ -32,9 +31,13 @@ body {
         font-size: 3em;
         height: 100%;
         width: 100%; }
+        body .container header h1 a {
+          color: #364559;
+          text-decoration: none; }
     body .container main {
       grid-area: main;
-      padding: 3vh; }
+      padding: 3vh;
+      overflow-y: scroll; }
       body .container main .msg-container {
         height: 100%;
         width: 100%;

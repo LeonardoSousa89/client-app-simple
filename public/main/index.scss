@@ -69,18 +69,22 @@ body{
 
         header{
             background:linear-gradient(63deg, $light 45%, $white 55%);
-            color:$dark;
             padding:1vh;
             @include area(header);
             h1{
                 font-size:3em;
-                @include size(100%,100%); 
+                @include size(100%,100%);
+                a{
+                    color:$dark;
+                    text-decoration:$none;
+                } 
             }
             overflow:$hide;
         }
         main{
             @include area(main);
             padding:3vh;
+            overflow-y:scroll;
             .msg-container{
                 @include size(100%,100%);
                 justify-content:$center;
