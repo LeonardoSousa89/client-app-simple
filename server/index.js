@@ -7,5 +7,8 @@ router.route('/').get((req, res)=>{
 router.route('/add-msg').get((req, res)=>{
     res.sendFile(__dirname + '/views/add-msg.html')
 })
+router.route('/options').get((req, res)=>{
+    res.sendFile(__dirname + '/views/options.html')
+})
 
 module.exports = router
