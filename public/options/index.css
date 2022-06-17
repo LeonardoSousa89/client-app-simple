@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&family=Teko:wght@300&display=swap");
-body .container main .msg-container .table {
-  border-radius: 6px; }
-
 body {
   margin: 0;
   font-family: 'Allerta Stencil', sans-serif;
@@ -10,66 +7,3 @@ body {
   overflow: hidden;
   height: 100vh;
   width: 100vw; }
-  body .container {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 30% 67% 3%;
-    grid-template-areas: "header header" "main main" "footer footer";
-    height: 100vh;
-    width: 100vw; }
-    body .container a {
-      color: #364559;
-      text-decoration: none; }
-    @media screen and (max-device-width: 780px) {
-      body .container header {
-        text-align: center; }
-        body .container header h1 {
-          font-size: medium; } }
-    body .container header {
-      background: linear-gradient(63deg, whitesmoke 45%, white 55%);
-      padding: 1vh;
-      grid-area: header;
-      overflow: hidden; }
-      body .container header h1 {
-        font-size: 3em;
-        height: 100%;
-        width: 100%; }
-    body .container main {
-      grid-area: main;
-      padding: 3vh;
-      overflow-y: scroll; }
-      body .container main .msg-container {
-        height: 100%;
-        width: 100%;
-        justify-content: center;
-        align-items: center; }
-        body .container main .msg-container .table {
-          padding: 1vh;
-          width: 100%;
-          box-shadow: 0px 0px 3px white;
-          border: 1px solid whitesmoke;
-          background: #364559; }
-          body .container main .msg-container .table thead th {
-            padding: 3px;
-            color: #364559;
-            background: whitesmoke; }
-          body .container main .msg-container .table ul {
-            padding: 3px;
-            background-color: #F25116;
-            color: whitesmoke; }
-    body .container main::-webkit-scrollbar {
-      width: 12px; }
-    body .container main::-webkit-scrollbar-track {
-      background: #364559; }
-    body .container main::-webkit-scrollbar-thumb {
-      background-color: #8C4130;
-      border-radius: 20px;
-      border: 3px solid #364559; }
-    body .container footer {
-      font-size: x-small;
-      display: flex;
-      flex-direction: column;
-      justify-content: end;
-      align-items: start;
-      grid-area: footer;
-      background: #2B3640; }

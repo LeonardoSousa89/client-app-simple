@@ -2,8 +2,7 @@ const doc=document
 
 let variable={
     id:doc.getElementById('id'),
-    msg:doc.getElementById('msg'),
-    opt:doc.getElementById('opt')
+    msg:doc.getElementById('msg')
 }
 
 doc.onload=addEventListener('load',(e)=>{
@@ -13,7 +12,8 @@ doc.onload=addEventListener('load',(e)=>{
 
 
 function loadData(){
-    const URL='https://server-app-simple.herokuapp.com'    
+    let id=variable.id
+    const URL=`https://server-app-simple.herokuapp.com/${id}`    
     const config={method:'GET'}
     fetch(URL,config).then(response=>response.json())
             .then(response=>{
