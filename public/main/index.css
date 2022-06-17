@@ -56,6 +56,14 @@ body {
           body .container main .msg-container .table ul {
             padding: 3px;
             background-color: #F25116; }
+    body .container main::-webkit-scrollbar {
+      width: 12px; }
+    body .container main::-webkit-scrollbar-track {
+      background: #364559; }
+    body .container main::-webkit-scrollbar-thumb {
+      background-color: #8C4130;
+      border-radius: 20px;
+      border: 3px solid #364559; }
     body .container footer {
       font-size: x-small;
       display: flex;
