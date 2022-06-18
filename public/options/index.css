@@ -1,8 +1,4 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&family=Teko:wght@300&display=swap");
-body .container, body .container #id {
-  border: solid red 1vh; }
-
 body {
   margin: 0;
   font-family: 'Allerta Stencil', sans-serif;
@@ -17,13 +13,25 @@ body {
     body a:hover {
       color: whitesmoke; }
   body .container {
-    /*código para teste visual*/
     height: 100%;
     width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    body .container #id {
-      /*código para teste visual*/
-      width: 50px; }
+    body .container .container-div {
+      margin-top: 30px;
+      margin-bottom: 20px;
+      height: 20%;
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start; }
+    body .container #container-id {
+      width: 150px; }
+    body .container #atualizar, body .container #deletar {
+      width: 80%; }
+    body .container #deletar {
+      margin-top: 15px;
+      margin-bottom: 50px; }

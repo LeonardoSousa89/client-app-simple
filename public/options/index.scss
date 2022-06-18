@@ -57,16 +57,23 @@ body{
         }
     }
     .container{
-        /*código para teste visual*/
-        @extend %border;
-
         @include size(100%,60%);
         @include d_flex(flex,column,center,center);
-        #id{
-             /*código para teste visual*/
-            @extend %border;
-
-            width:50px;
+        .container-div{
+            margin-top:30px;
+            margin-bottom:20px;
+            @include size(20%,80%);
+            @include d_flex(flex,column,space-between,flex-start);
+        }
+        #container-id{
+            width:150px;
+        }
+        #atualizar,#deletar{
+            width:80%;
+        }
+        #deletar{
+            margin-top:15px;
+            margin-bottom:50px;
         }
     }
 }
