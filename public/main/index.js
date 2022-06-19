@@ -7,7 +7,6 @@ let variable={
 
 doc.onload=addEventListener('load',(e)=>{
     loadData()
-    insertIdOnLocalStorage()
 })
 
 function loadData(){
