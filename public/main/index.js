@@ -3,14 +3,12 @@ const doc=document
 let variable={
     id:doc.getElementById('id'),
     msg:doc.getElementById('msg'),
-    opt:doc.getElementById('opt')
 }
 
 doc.onload=addEventListener('load',(e)=>{
-    e.preventDefault()
     loadData()
+    insertIdOnLocalStorage()
 })
-
 
 function loadData(){
     const URL='https://server-app-simple.herokuapp.com'    
@@ -33,5 +31,9 @@ function createServerElement(typeElement,serverElement,containerPrintElementOnDo
     elementCreated.append(serverElement)
     containerPrintElementOnDom.append(elementCreated)
 }
+
+doc.getElementById('opt').addEventListener('click',()=>{
+    doc.location.href='http://192.168.56.1:8080/options'
+})
 
 

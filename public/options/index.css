@@ -30,8 +30,10 @@ body {
       align-items: flex-start; }
     body .container #container-id {
       width: 150px; }
-    body .container #atualizar, body .container #deletar {
+    body .container #atualizar, body .container #deletar, body .container #obter {
       width: 80%; }
+    body .container #obter {
+      margin-bottom: 15px; }
     body .container #deletar {
       margin-top: 15px;
       margin-bottom: 50px; }

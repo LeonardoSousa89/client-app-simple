@@ -11,27 +11,19 @@ doc.onload=addEventListener('load',(e)=>{
 })
 
 
-function loadData(){
-    let id=variable.id
+function loadData(id){
     const URL=`https://server-app-simple.herokuapp.com/${id}`    
     const config={method:'GET'}
+    console.log(id)
     fetch(URL,config).then(response=>response.json())
             .then(response=>{
                 for(let i=0;i<response.length;i++){
-                    let id=response[i].id
-                    createServerElement('ul',id,variable.id)
-
-                    let msg=response[i].msg
-                    createServerElement('ul',msg,variable.msg)
+                  /**código aqui */
                 }
             })
             .catch(e=>console.log(e))
 }
 
-function createServerElement(typeElement,serverElement,containerPrintElementOnDom){
-    let elementCreated=doc.createElement(`${typeElement}`)
-    elementCreated.append(serverElement)
-    containerPrintElementOnDom.append(elementCreated)
-}
+
 
 

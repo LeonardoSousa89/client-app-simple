@@ -68,8 +68,11 @@ body{
         #container-id{
             width:150px;
         }
-        #atualizar,#deletar{
+        #atualizar,#deletar,#obter{
             width:80%;
+        }
+        #obter{
+            margin-bottom:15px;
         }
         #deletar{
             margin-top:15px;
